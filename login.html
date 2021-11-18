@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HeartScan | Login</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/9d1286f048.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <a href = "index.html">
+      <img class="img-logo" src="images/Heart-logo.png" alt="Logo">
+    </a>
+      <div class="login-box">
+        <img src="avatar.png" class="avatar" alt="avatar">
+        <h1>Login</h1>
+        <!--<form class="" action="index.html" method="post">-->
+          <!--<form onsubmit =  "return setAction(this)">-->
+          <p>Email</p>
+          <input type="text" id="email" placeholder="Enter Email">
+          <p>Password</p>
+          <input type="password" id="password" placeholder="Enter Password">
+          <!--<input type="login" id="" value="Login">-->
+          <div id = "button-container">
+            <button class="btn" onclick="login()">Login</button>
+          </div>
+         
+          <button id = "forgot-pass"> Forgot your password?</button>
+          <div id = "forgotModal" class = "modal">
+            <div class = "modal-content">
+              <span class = "close">&times;</span>
+              <p> Please enter your email to reset your password:
+              </p>
+              <input type = "text" id = "forgottenPassEmail" placeholder= "Enter Email">
+              <div id = "modalButton-container">
+                <button class="modal-btn" onclick="resetPass()">Submit</button>
+              </div>
+            </div>
+          </div>
+          <!--<a href="#">Forgot your password?</a>-->
+          <a href="signup.html">Don't have an account?</a>
+        </form>
+      </div>
+      <footer id="footer">
+        <div class="container-fluid">
+          <p>Contact</p>
+          <p>Phone: 1-800-6739</p>
+          <i class="social-icon fab fa-facebook-square"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fas fa-envelope-square"></i>
+          <p>© Copyright 2021 💕HeartScan</p>
+        </div>
+      </footer>
+
+
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<!--9.1.3-->
+<script src = "login.js"></script>
+  </body>
+
+</html>

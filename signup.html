@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HeartScan | Sign Up</title>
+  <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="signup.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9d1286f048.js" crossorigin="anonymous"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Javascript for toggle button to function -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $(".toggle").on("click", function() {
+
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        } else {
+          $('.item').addClass("active");
+        }
+      })
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a href = "index.html">
+  <img src="Heart-logo.PNG" alt="Logo">
+  </a>
+
+    <div id = "login-box">
+        <div class = "left-box">
+            <h1> Sign Up </h1>
+
+                <input type = "radio" id = "doctor" name = "user-type" value = "DOCTOR">
+                <label for ="doctor">Doctor</label><br>
+                <input type = "radio" id = "patient" name = "user-type" value = "PATIENT">
+                <label for ="doctor">Patient</label><br>
+
+                <input type = "text" id = "firstname" placeholder="First Name"/>
+                <input type = "text" id = "lastname" placeholder="Last Name"/>
+               <!-- <input type = "text" id = "username" placeholder="Username"/>-->
+                <input type = "text" id = "email" placeholder="Email"/>
+                <input type = "password" id = "password" placeholder="Password"/>
+                <input type = "password" id = "password2" placeholder="Confirm Password"/>
+                <!--<input type = "submit" id = "signup-button" placeholder="Sign Up"/>-->
+                <div id = "button-container">
+                  <button class="btn" onclick="submitInfo()">Submit</button>
+                </div>
+        </div>
+    <div class = "right-box">
+        <span class ="signinwith">Sign in with <br> Social Network </span>
+    <button class = "social facebook">Log in with Facebook</button>
+    <button class = "social twitter">Log in with Twitter</button>
+    <button class = "social google">Log in with Google</button>
+    </div>
+
+    <div class = "or">OR</div>
+</div>
+    <footer id="footer">
+      <div class="container-fluid">
+        <p>Contact</p>
+        <p>Phone: 1-800-6739</p>
+        <i class="social-icon fab fa-facebook-square"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope-square"></i>
+        <p>© Copyright 2021 💕HeartScan</p>
+      </div>
+    </footer>
+
+
+</body>
+
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+<!--9.1.3-->
+<!--9.1.3-->
+<script src = "signup.js"></script>
+
+</html>

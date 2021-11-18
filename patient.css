@@ -1,0 +1,122 @@
+a {
+  font-size: 20px !important;
+  font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+  color: white !important;
+  text-shadow: 0 0 20px #FBFFFF;
+  text-decoration: underline;
+  transition: all .05s;
+}
+
+body {
+  background-color: #F4F9F9 !important;
+}
+
+img {
+  height: 100px;
+  width: 250px;
+  padding-left: 30px;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 20px #1F51FF;
+  filter: brightness(2);
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.logout {
+  background: transparent !important;
+  border-color: #fe019a !important;
+  border-style: solid !important;
+  border-radius: 50em;
+  padding: 7px 15px !important;
+  box-shadow: 0 0 20px #fe019a;
+  color: white;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background: #fe019a !important;
+  text-decoration: none;
+}
+
+
+
+.modal {
+  padding-top: 250px;
+  max-width: fit-content;
+  max-height: fit-content;
+  left:50%;
+  top:50%;
+  margin-left:760px;
+  margin-right: -150px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200;  /* Location of the box */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+  /*background: #2B2B2B;*/
+
+}
+
+.modal-content {
+  line-height: normal;
+  background: #181616;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  opacity: 0.99;
+  justify-content: center;
+  
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fe019a;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalButton-container{
+  padding-top: 10px;
+}
+.modal-btn {
+
+  border: none;
+  width: 40%;
+  outline: none;
+  height: 30px;
+  background: #fe019a;
+  box-shadow: 0 0 20px #fe019a;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.modal-btn:hover {
+  cursor: pointer;
+  background: transparent;
+  border-color: #fe019a;
+  border-style: solid;
+}
